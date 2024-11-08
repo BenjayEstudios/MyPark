@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { BuscarPageRoutingModule } from './buscar-routing.module';
 
-import { HomePage } from './home.page';
-import { MenuModule } from '../modules/menu/menu.module';       // Importar
-
+import { BuscarPage } from './buscar.page';
+import { MenuModule } from 'src/app/modules/menu/menu.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    BuscarPageRoutingModule,
     MenuModule              // importar
   ],
-  declarations: [HomePage]
+  declarations: [BuscarPage]
 })
-export class HomePageModule {}
+export class BuscarPageModule {}

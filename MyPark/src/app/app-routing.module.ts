@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'buscar',
+    loadChildren: () => import('./pages/buscar/buscar.module').then( m => m.BuscarPageModule)
+  },
+  {
+    path: 'reservas',
+    loadChildren: () => import('./pages/reservas/reservas.module').then( m => m.ReservasPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
 ];
 
 @NgModule({

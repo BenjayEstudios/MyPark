@@ -1,25 +1,25 @@
 <ion-tabs class="menu">  
     <ion-tab-bar slot="bottom">
       <!-- Inicio -->
-      <ion-tab-button tab="inicio">
+      <ion-tab-button tab="inicio" [routerLink]="['/home']">
         <ion-icon name="home-outline"></ion-icon>
         Inicio
       </ion-tab-button>
       
       <!-- Buscar -->
-      <ion-tab-button tab="buscar">
-        <ion-icon name="location-outline"></ion-icon>
+      <ion-tab-button tab="buscar" [routerLink]="['/buscar']">
+        <ion-icon name="location-outline" ></ion-icon>
         Buscar
       </ion-tab-button>
       
       <!-- Reservas -->
-      <ion-tab-button tab="reservas">
+      <ion-tab-button tab="reservas" [routerLink]="['/reservas']">
         <ion-icon name="calendar-outline"></ion-icon>
         Reservas
       </ion-tab-button>
       
       <!-- Perfil -->
-      <ion-tab-button tab="perfil">
+      <ion-tab-button tab="perfil" [routerLink]="['/perfil']">
         <ion-icon name="person-circle-outline"></ion-icon>
         Perfil
       </ion-tab-button>

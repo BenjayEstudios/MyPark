@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { ReservasPageRoutingModule } from './reservas-routing.module';
 
-import { HomePage } from './home.page';
-import { MenuModule } from '../modules/menu/menu.module';       // Importar
-
+import { ReservasPage } from './reservas.page';
+import { MenuModule } from 'src/app/modules/menu/menu.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    ReservasPageRoutingModule,
     MenuModule              // importar
   ],
-  declarations: [HomePage]
+  declarations: [ReservasPage]
 })
-export class HomePageModule {}
+export class ReservasPageModule {}
