@@ -22,7 +22,23 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'info-personal',
+    loadChildren: () => import('./pages/info-personal/info-personal.module').then( m => m.InfoPersonalPageModule)
+  },
+  {
+    path: 'pagos-cobros',
+    loadChildren: () => import('./pages/pagos-cobros/pagos-cobros.module').then( m => m.PagosCobrosPageModule)
+  },
+  {
+    path: 'accesibilidad',
+    loadChildren: () => import('./pages/accesibilidad/accesibilidad.module').then( m => m.AccesibilidadPageModule)
+  },
+
 ];
 
 @NgModule({

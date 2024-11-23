@@ -1,28 +1,31 @@
+<ion-app>
 <ion-tabs class="menu">  
     <ion-tab-bar slot="bottom">
       <!-- Inicio -->
-      <ion-tab-button tab="inicio" [routerLink]="['/home']">
+      <ion-tab-button tab="inicio" (click)="goTo('/home')">
         <ion-icon name="home-outline"></ion-icon>
         Inicio
       </ion-tab-button>
       
       <!-- Buscar -->
-      <ion-tab-button tab="buscar" [routerLink]="['/buscar']">
+      <ion-tab-button tab="buscar" (click)="goTo('/buscar')">
         <ion-icon name="location-outline" ></ion-icon>
         Buscar
       </ion-tab-button>
       
       <!-- Reservas -->
-      <ion-tab-button tab="reservas" [routerLink]="['/reservas']">
+      <ion-tab-button tab="reservas" (click)="goTo('/reservas')">
         <ion-icon name="calendar-outline"></ion-icon>
         Reservas
       </ion-tab-button>
       
       <!-- Perfil -->
-      <ion-tab-button tab="perfil" [routerLink]="['/perfil']">
+      <ion-tab-button tab="perfil" (click)="goTo('/perfil')">
         <ion-icon name="person-circle-outline"></ion-icon>
         Perfil
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
   
+    
+  </ion-app>
